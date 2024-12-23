@@ -58,13 +58,12 @@ def plot_func_c_g(x: np.array(float),
     ax.set_xlabel("x")
     ax.set_ylabel("y / b")
     ax.set_zlabel("z (c / g)")
-
     ax.legend()
-    plt.show()
 
     plt.savefig("plots/task_1_plot.png", format="png")
     plt.savefig("plots/task_1_plot.pdf", format="pdf")
 
+    plt.show()
     plt.close()
 
 
@@ -107,11 +106,11 @@ def task_2(sdv: float = 0.5, size: int = 50) -> None:
     plt.title("Scatter Plot with 3 Clusters")
     plt.legend()
     plt.grid(True)
-    plt.show()
 
     plt.savefig("plots/task_2_scatter.png", format="png")
     plt.savefig("plots/task_2_scatter.pdf", format="pdf")
 
+    plt.show()
     plt.close()
 
 
@@ -122,11 +121,10 @@ def task_3() -> None:
     plt.figure(figsize=(6, 6))
     plt.pie(preferences, labels=categories, autopct='%1.1f%%', startangle=140, colors=sns.color_palette("pastel"))
     plt.title("User Preferences")
-    plt.show()
-
     plt.savefig("plots/task_3_piechart.png", format="png")
     plt.savefig("plots/task_3_piechart.pdf", format="pdf")
 
+    plt.show()
     plt.close()
 
 
@@ -136,11 +134,11 @@ def task_4() -> None:
     plt.figure(figsize=(8, 6))
     sns.heatmap(matrix, annot=False, cmap='coolwarm', cbar=True)
     plt.title("Heatmap of Random Matrix")
-    plt.show()
 
     plt.savefig("plots/task_4_heatmap.png", format="png")
     plt.savefig("plots/task_4_heatmap.pdf", format="pdf")
 
+    plt.show()
     plt.close()
 
 
@@ -155,11 +153,11 @@ def task_5() -> None:
     plt.ylabel("Categories")
     plt.title("Horizontal Bar Chart")
     plt.grid(axis='x', linestyle='--', alpha=0.7)
-    plt.show()
 
     plt.savefig("plots/task_5_barchart.png", format="png")
     plt.savefig("plots/task_5_barchart.pdf", format="pdf")
 
+    plt.show()
     plt.close()
 
 
@@ -180,11 +178,10 @@ def task_7() -> None:
     ax.set_zlabel("Z-axis")
     fig.colorbar(surf, shrink=0.5, aspect=10)
 
-    plt.show()
-
     plt.savefig("plots/task_7_surfaceplot.png", format="png")
     plt.savefig("plots/task_7_surfaceplot.pdf", format="pdf")
 
+    plt.show()
     plt.close()
 
 

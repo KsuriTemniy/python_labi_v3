@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from routes.tasks import router as tasks_router
-from database import create_database
+from app.routes.tasks import router as tasks_router
+from app.database import create_database
 
 app = FastAPI(
     title="Task Manager",

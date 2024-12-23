@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from app.models import Task
-from app.schemas import TaskCreate
+from models import Task
+from schemas import TaskCreate
 
 def create_task(db: Session, task: TaskCreate):
     db_task = Task(title=task.title)

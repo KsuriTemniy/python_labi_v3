@@ -1,0 +1,1 @@
+from .parsing import get_1d_function_from_input
